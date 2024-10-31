@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Создание веб сайта</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <img
+          src="./imgs/4026429_device_electronic_game_machine_technology_icon.png"
+          alt="logo"
+        />
+      </span>
+      <span>
+        <h1>
+          Games<br />
+          <span>Industry</span>
+        </h1>
+      </span>
+      <input id="open-search" placeholder="Введите запрос"></input>
+
+      <div id="search-container" class="hidden">
+        <h1>Форма поиска</h1>
+        <input type="text" id="search-input" placeholder="Поиск" />
+        <button id="close-search">Закрыть</button>
+      </div>
+      <div class="buttons">
+        <button type="button">Главная</button>
+        <button type="button">Новости</button>
+        <button type="button">О нас</button>
+      </div>
+    </header>
+    <section id="main-block">
+      <div class="warp">
+        <div class="left-path">
+          <h1>
+            Лучшие проекты,<br />
+            вышедшие за<br />последние три года в<br />
+            игросфере
+          </h1>
+          <p>
+            Перед тем как приступить в прочтению нашего каталога игр, предлагаем
+            Вам просмотреть несколько новостей, вышедших за эту неделю, а также
+            ознакомиться с правилами пользования нашей площадки.
+          </p>
+          <button type="button">Читать далее</button>
+        </div>
+        <div class="right-path">
+          <img src="./imgs/3e9954da7488daf1cf1789a47627b.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="news-block">
+      <h1 class="title">Новости</h1>
+      <div class="news-path">
+        <form>
+          <img class="unreal" src="./imgs/firstimg1.jpg" alt="news" />
+          <h3>
+            Сравнение движков: Unreal<br />
+            Engine 4 против Unity 5
+          </h3>
+          <p>
+            Выбирать движок дело не простое, а особенно когда оба очень хороши.
+            В статье мы проведем сравнение двух программ и выясним какой движок
+            использовать именно Вам!
+          </p>
+          <button type="button">Читать далее</button>
+        </form>
+        <form>
+          <img
+            src="./imgs/exodus.jpg
+          "
+            alt="news"
+          />
+          <h3>
+            Космический ужас в новом<br />
+            трейлере Exodus
+          </h3>
+          <p>
+            Студия Archetype Entertainment, состоящая из бывших сотрудников
+            BioWare, опубликовала новый трейлер Exodus — научно-фантастической
+            экшен-RPG. В свежем ролике продемонстрировали...
+          </p>
+          <button type="button">Читать далее</button>
+        </form>
+        <form>
+          <img src="./imgs/sony.webp" alt="news" />
+          <h3>
+            Sony анонсировала серию<br />
+            концертов с музыкой из своих игр
+          </h3>
+          <p>
+            Sony организует мировое турне под названием PlayStation: The
+            Concert. Компания объединила усилия с RoadCo Entertainment и GEA
+            Live, чтобы в 2025-м и 2026 году привезти музыку из самых...
+          </p>
+          <button type="button">Читать далее</button>
+        </form>
+        <form>
+          <img src="./imgs/steam.png" alt="news" />
+          <h3>
+            В Steam начался осенний фестиваль<br />
+            демоверсий «Играм быть»
+          </h3>
+          <p>
+            Valve дала старт полюбившемуся многим фестивалю «Играм быть».
+            Геймеров уже ждут сотни демоверсий в самых разных жанрах, а также
+            множество трансляцийот разработчиков. Событие продлится...
+          </p>
+          <button type="button">Читать далее</button>
+        </form>
+      </div>
+      <div class="announcements">
+        <h1>Анонсы</h1>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae
+            debitis voluptatibus quas nihil inventore animi suscipit amet et at?
+          </p>
+        </div>
+        <div class="anons">
+          <img src="./imgs/anons.jpg" alt="anons" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+            modi dolorem autem, impedit veritatis commodi eos cum iste
+            voluptatem, quasi iure quos, fugiat ut! Atque ab ullam quasi
+            molestias voluptas repudiandae, consectetur reprehenderit nulla
+            tenetur.
+          </p>
+          <button>Читать далее</button>
+        </div>
+      </div>
+    </section>
+    <section id="news-block">
+      <!-- Ваш существующий блок с новостями -->
+
+      <div id="more-news" class="news-path"></div>
+      <!-- Контейнер для дополнительных статей -->
+
+      <button id="loadMoreBtn" class="load-more-btn">
+        Показать больше статей
+      </button>
+      <!-- Кнопка загрузки -->
+    </section>
+    <footer>
+      <h2>Все права защищены &copy;</h2>
+    </footer>
+    <button id="scrollToTopBtn" title="Наверх">⬆</button>
+    <script src="./index.js"></script>
+  </body>
+</html>
